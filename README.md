@@ -57,7 +57,35 @@ md.pattern(Data12, rotate.names = TRUE)
 <br />
 
 
+## 4. Aplicar una función a todo un conjunto de datos
 
+<br />
+
+- Para cambiar tipo de datos
+
+```r
+Data11 %>% 
+  mutate(across(everything(), ~as.numeric(.)))
+```
+
+
+
+<br />
+<br />
+
+
+## 5. Contabilizar los NAs por columnas
+
+<br />
+
+```r
+Data11 %>% 
+  summarise_all(funs(sum(is.na(.))))
+```
+
+
+<br />
+<br />
 
 
 
