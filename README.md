@@ -4,6 +4,8 @@
 
 [This is the link text](##5.ContabilizarlosNAsporcolumnas)
 
+[Purpose]([https://github.com/hillaryfraley/jobbriefings](https://github.com/RcanariDev/r-tips)##5.ContabilizarlosNAsporcolumnas)
+
 <br />
 
 
