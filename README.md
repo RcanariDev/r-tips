@@ -16,11 +16,11 @@ glimpse(Data11)
 
 Se tiene que instalar primero la libreria ***library(mlr)***
 
-````r
+```r
 library(mlr)
 
 summarizeColumns(Data11)
 ```
 
-
+<br />
 
