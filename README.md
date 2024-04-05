@@ -2,11 +2,6 @@
 
 <br />
 
-[This is the link text](##5.ContabilizarlosNAsporcolumnas)
-
-[Purpose](https://github.com/RcanariDev/r-tips##5.ContabilizarlosNAsporcolumnas)
-
-<br />
 
 
 ## 1. Obtener resumen de un data frame
