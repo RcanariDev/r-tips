@@ -2,7 +2,7 @@
 
 <br />
 
-[This is the link text](#heading-title)
+[This is the link text](## 5. Contabilizar los NAs por columnas)
 
 <br />
 
