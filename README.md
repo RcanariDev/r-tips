@@ -128,7 +128,7 @@ test <- Data12 %>%
 <br />
 <br />
 
-## 5. Graficar todas las variables de un dataframe
+## 7. Graficar todas las variables de un dataframe
 
 <br />
 
@@ -155,18 +155,44 @@ plot_var_all(iris)
 
 <br />
 
-3. Aplicado en función de otras variable
+3. Aplicado en función de otra variable
 
 ```r
 plot_var_all(Data11, var2 = Species) 
 ```
 
+<br />
+<br />
 
+## 8. Graficar las varibles de dataframe (Otra forma)
 
+<br />
 
+Llamar a la libreria: **library(tidyr)**
 
+<br />
 
+- Solo para variables numéricas
 
+```r
+iris %>% 
+  select_if(is.numeric) %>% 
+  gather %>% 
+  ggplot(aes(x = value)) + 
+  geom_histogram() + 
+  facet_wrap(~key)
+```
+
+- Solo para variables factor
+
+```r
+iris %>% 
+  select_if(is.factor) %>% 
+  gather %>% 
+  ggplot(aes(x = value)) + geom_bar() +
+  facet_wrap(~key) +
+  coord_flip()
+```
 
 
 
