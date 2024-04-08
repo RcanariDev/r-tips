@@ -89,8 +89,42 @@ Data11 %>%
 <br />
 <br />
 
+## 6. Crear una data de entrenamiento y de prueba
+
+<br />
+
+1. Poner una semilla
+2. Crear una columna que identifique a cada registro
+3. Crear la data de entrenamiento
+4. Crear la data de prueba
+
+````{r}
+library(dplyr)
+
+Data11 <- iris
+dim(Data11) #150
+
+# Estableciendo una semilla
+set.seed(1)
+
+# Se debe crear una columna Id
+Data12 <- Data11 %>% 
+  mutate(Id = 1:nrow(.), .before = Sepal.Length)
+
+# Seleccionando el train (105)
+train <- Data12 %>% 
+  sample_frac(.7)
+
+# Seleccionando el test (45)
+test <- Data12 %>% 
+  anti_join(train
+            , by = "Id") 
+
+```
 
 
+<br />
+<br />
 
 
 
