@@ -130,8 +130,9 @@ test <- Data12 %>%
 
 ## 5. Graficar todas las variables de un dataframe
 
-Buscar más información en: [Link](https://github.com/bcgov/elucidate/)
+<br />
 
+Buscar más información en: [Link](https://github.com/bcgov/elucidate/)
 
 <br />
 
