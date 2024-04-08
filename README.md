@@ -98,6 +98,8 @@ Data11 %>%
 3. Crear la data de entrenamiento
 4. Crear la data de prueba
 
+<br />
+
 ```r
 library(dplyr)
 
