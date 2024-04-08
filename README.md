@@ -128,7 +128,7 @@ test <- Data12 %>%
 <br />
 <br />
 
-## 7. Graficar todas las variables de un dataframe
+## 7. Graficar todas las variables de un dataframe (1 forma)
 
 <br />
 
@@ -164,7 +164,7 @@ plot_var_all(Data11, var2 = Species)
 <br />
 <br />
 
-## 8. Graficar las varibles de dataframe (Otra forma)
+## 8. Graficar las varibles de dataframe (2 forma)
 
 <br />
 
@@ -195,6 +195,28 @@ iris %>%
 ```
 
 
+
+
+<br />
+<br />
+
+## 9. Graficar las varibles de dataframe (3 forma)
+
+<br />
+
+Llamar a la libreria: **library(GGallyr)**
+
+<br />
+
+```r
+library(GGally)
+
+ggpairs(iris)
+```
+
+
+<br />
+<br />
 
 
 
