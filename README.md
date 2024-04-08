@@ -153,6 +153,13 @@ library(elucidate)
 plot_var_all(iris) 
 ```
 
+<br />
+
+3. Aplicado en función de otras variable
+
+```r
+plot_var_all(Data11, var2 = Species) 
+```
 
 
 
