@@ -128,5 +128,41 @@ test <- Data12 %>%
 <br />
 <br />
 
+## 5. Graficar todas las variables de un dataframe
+
+Buscar más información en: [Link](https://github.com/bcgov/elucidate/)
+
+
+<br />
+
+1. Para instalar
+
+```r
+library(remotes)
+remotes::install_github("bcgov/elucidate")
+```
+
+<br />
+  
+2. Aplicar
+
+```r
+library(elucidate)
+
+plot_var_all(iris) 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
