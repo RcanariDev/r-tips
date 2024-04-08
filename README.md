@@ -98,7 +98,7 @@ Data11 %>%
 3. Crear la data de entrenamiento
 4. Crear la data de prueba
 
-````{r}
+```{r}
 library(dplyr)
 
 Data11 <- iris
