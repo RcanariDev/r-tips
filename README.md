@@ -226,7 +226,28 @@ ggpairs(iris)
 <br />
 <br />
 
+## 10. Seleccionar variables tipos numéricas y factores
 
+<br />
+
+- Variables de tipo numéricas
+
+```r
+Train14Num <- Train14 %>% 
+  select_if(is.numeric) 
+```
+
+- Variables de tipo charcater
+
+```r
+Train14NoNum <- Train14 %>% 
+  select_if(is.character)
+```
+
+
+
+<br />
+<br />
 
 
 
