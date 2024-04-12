@@ -70,6 +70,14 @@ Data11 %>%
   mutate(across(everything(), ~as.numeric(.)))
 ```
 
+<br />
+
+- Otro ejemplo
+
+```r
+Train12 <- Train11 %>% 
+  mutate(across(everything(), ~ifelse(.=="NA", NA, .)))
+```
 
 
 <br />
