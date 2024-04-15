@@ -250,4 +250,27 @@ Train14NoNum <- Train14 %>%
 <br />
 
 
+## 11. Extraer los primeros n caracteres de una cadena de texto
+
+<br />
+
+Se utiliza la libreria **stringr**
+
+<br />
+
+Extrayendo los primeros *n* caracteres
+
+```r
+library(stringr)
+
+Data11 %>% 
+  mutate(Anio = str_sub(FechaMesOrdenAjustado, 1, n))
+
+```
+
+
+<br />
+<br />
+
+
 
