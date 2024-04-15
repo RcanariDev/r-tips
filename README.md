@@ -273,4 +273,45 @@ Data11 %>%
 <br />
 
 
+## 12. Restar fechas seguidas para cada categoria
+
+<br />
+
+- Inicialmente se tiene agrupado por las categorias
+ 
+```r
+DataCanal11 %>% 
+  filter(FechaAjustada %in% c("2023-04-05", "2024-03-27")) %>% 
+  filter(NombreCompania == "DON TITO")
+```
+
+<br />
+
+<img src="/imag/Contras12.jpg" width=60% height=60%>
+
+<br />
+
+- Luego se resta las categorias que son seguidas por fecha, con la función **lag()**
+
+```r
+DataCanal11 %>% 
+  filter(FechaAjustada %in% c("2023-04-05", "2024-03-27")) %>% 
+  filter(NombreCompania == "DON TITO") %>% 
+  group_by(CanalVenta) %>% 
+  mutate(
+    DifTotal = (TotalCasos - lag(TotalCasos))/lag(TotalCasos)*100
+  )
+
+```
+
+<br />
+
+<img src="/imag/Contras11.jpg" width=60% height=60%>
+
+<br />
+
+
+<br />
+<br />
+
 
