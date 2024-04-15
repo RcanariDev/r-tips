@@ -287,7 +287,7 @@ DataCanal11 %>%
 
 <br />
 
-<img src="/imag/Contras12.jpg" width=60% height=60%>
+<img src="/img/Contras12.jpg" width=60% height=60%>
 
 <br />
 
@@ -306,7 +306,7 @@ DataCanal11 %>%
 
 <br />
 
-<img src="/imag/Contras11.jpg" width=60% height=60%>
+<img src="/img/Contras11.jpg" width=60% height=60%>
 
 <br />
 
