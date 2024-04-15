@@ -291,7 +291,10 @@ DataCanal11 %>%
 
 <br />
 
+<br />
+
 - Luego se resta las categorias que son seguidas por fecha, con la función **lag()**
+
 
 ```r
 DataCanal11 %>% 
@@ -306,7 +309,6 @@ DataCanal11 %>%
 
 <br />
 
-<br />
 
 <img src="/img/Contras11.jpg" width=60% height=60%>
 
