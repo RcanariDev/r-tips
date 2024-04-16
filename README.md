@@ -319,19 +319,8 @@ DataCanal11 %>%
 <br />
 
 
-## 13. Guardar ggplot como imagen png o jpg
 
-<br />
-
-```r
-ggsave("C:/Users/.../img/Img15.png", plot = DataUnida11, width=18, height=8, dpi=700)
-```
-
-<br />
-<br />
-
-
-## 14. Uso de grepl() para patrones
+## 13. Uso de grepl() para patrones
 
 <br />
 
