@@ -319,3 +319,43 @@ DataCanal11 %>%
 <br />
 
 
+## 13. Guardar ggplot como imagen png o jpg
+
+<br />
+
+```r
+ggsave("C:/Users/.../img/Img15.png", plot = DataUnida11, width=18, height=8, dpi=700)
+```
+
+<br />
+<br />
+
+
+## 14. Uso de grepl() para patrones
+
+<br />
+
+- Si contiene: **grepl("-01", FechaMesOrdenAjustado)**
+- No contiene: **!grepl("-01", FechaMesOrdenAjustado)**
+- Contiene varios valores (ó) (|): **grepl("-01|-02", FechaMesOrdenAjustado)**
+
+<br />
+
+```r
+Data11 %>% 
+  mutate(Mes = case_when(
+    grepl("-01", FechaMesOrdenAjustado) ~ "Enero",
+    grepl("-02", FechaMesOrdenAjustado) ~ "Febrero",
+    grepl("-03", FechaMesOrdenAjustado) ~ "Marzo",
+    grepl("-04", FechaMesOrdenAjustado) ~ "Abril"
+  ), .before = FechaMesOrdenAjustado)
+
+```
+
+<br />
+<br />
+
+
+
+
+
