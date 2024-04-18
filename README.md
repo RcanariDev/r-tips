@@ -345,6 +345,21 @@ Data11 %>%
 <br />
 
 
+# 14. Mostrar resumen de SOLO las variables numéricas
 
+<br />
 
+- Se utiliza la función **profiling_num()**
+
+<br />
+
+```r
+library(funModeling)
+
+profiling_num(Data11)
+
+```
+
+<br />
+<br />
 
