@@ -385,3 +385,59 @@ profiling_num(Data11)
 <br />
 <br />
 
+## 15. Mostar los NAs en table()
+
+<br />
+
+```r
+table(Data11$Dependents, useNA = "ifany")
+
+table(Data11$Dependents, useNA = "always")
+```
+
+
+<br />
+<br />
+
+
+## 16. Convertir todos los espacios en blancos en NA
+
+<br />
+
+```r
+Data11 %>% 
+  mutate(across(everything(), ~ifelse(.=="", NA, .)))
+```
+
+<br/>
+<br />
+
+## 17. Convertir todos los patrones de caracteres en otro valor
+
+<br />
+
+```r
+Data11 %>% 
+  mutate(across(everything(), ~ifelse(.=="NA", NA, .)))
+```
+
+
+<br />
+<br />
+
+## 18. Mostrar todos los niveles de las variables caracteres de un dataframe
+
+<br />
+
+```r
+Data11 %>% 
+  select_if(negate(is.numeric)) %>% 
+  map(table, useNA = "ifany")
+```
+
+<br />
+<br />
+
+
+
+
