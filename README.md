@@ -72,6 +72,14 @@ Data11 %>%
 
 <br />
 
+
+````r
+DataAcademic11 %>% 
+  mutate(across(everything(), ~as.numeric(as.character(.))))
+```
+
+<br />
+
 - Otro ejemplo
 
 ```r
