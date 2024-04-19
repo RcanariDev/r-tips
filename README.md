@@ -245,7 +245,21 @@ Train14Num <- Train14 %>%
   select_if(is.numeric) 
 ```
 
-- Variables de tipo charcater
+<br />
+
+- Excluir las numéricas
+
+<br />
+
+```r
+library(tidyverse)
+Data11 %>% 
+  select_if(negate(is.numeric))
+```
+
+<br />
+
+- Variables de tipo character
 
 ```r
 Train14NoNum <- Train14 %>% 
