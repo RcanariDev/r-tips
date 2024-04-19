@@ -73,7 +73,7 @@ Data11 %>%
 <br />
 
 
-````r
+```r
 DataAcademic11 %>% 
   mutate(across(everything(), ~as.numeric(as.character(.))))
 ```
