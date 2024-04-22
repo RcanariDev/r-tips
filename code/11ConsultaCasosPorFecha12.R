@@ -63,10 +63,10 @@ ConsultaScore <- R6Class(
         # Driver = "SQL Server",
         # Driver = "FreeTDS",
         # TDS_Version = 7.4,
-        Server = "eis-app.database.windows.net",
-        Database = "eis",
-        uid = "eis-pbi",
-        pwd = "123ppp+++",
+        Server = "xxx-xxx.xxxxxxxx.xxxxxxx.xxx",
+        Database = "xxx",
+        uid = "xxx-xxx",
+        pwd = "xxxxxxxxx",
         #Trusted_Connection = TRUE,
         Port= 1433
       )
@@ -207,7 +207,7 @@ ConsultaScore <- R6Class(
     
     , ExportarInformacion = function(){
       
-      write_xlsx(self$Data12, paste0("C:/Users/Administrador/Downloads/ScoreDelivery", self$Empresa, "_", self$FechaInicial, "_", self$FechaFinal, " ", format(Sys.time(),'%Y-%m-%d %H.%M.%S'), ".xlsx"))
+      write_xlsx(self$Data12, paste0("C:/Users/", self$Empresa, "_", self$FechaInicial, "_", self$FechaFinal, " ", format(Sys.time(),'%Y-%m-%d %H.%M.%S'), ".xlsx"))
       
     }
     
