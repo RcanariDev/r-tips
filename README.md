@@ -463,6 +463,7 @@ Se utiliza **gsub()**
 <br />
 
 ```r
+data11 %>%
 mutate(
     ETA = gsub("0 days ", "", DuracionEstimada)
   ) 
