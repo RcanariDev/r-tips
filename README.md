@@ -438,6 +438,22 @@ Data11 %>%
 <br />
 <br />
 
+## 19. Leer todos los registros de un Excel
+
+<br />
+
+```r
+library(readxl)
+library(tidyverse)
+
+DataOrd11 <- read_xlsx("C:/Users/Administrador/OneDrive/Escritorio/Moderna/2023/ProyectosAvances/26PredPromesa/11DataOrdenes11.xlsx"
+            , guess_max = min(80000, n_max = NULL) )
+
+```
+
+<br />
+<br />
+
 
 
 
