@@ -454,6 +454,24 @@ DataOrd11 <- read_xlsx("C:/Users/Administrador/OneDrive/Escritorio/Moderna/2023/
 <br />
 <br />
 
+## 20. Reemplazar una cadena de caracteres por otra
+
+<br />
+
+Se utiliza **gsub()**
+
+<br />
+
+```r
+mutate(
+    ETA = gsub("0 days ", "", DuracionEstimada)
+  ) 
+
+```
+
+
+<br />
+<br />
 
 
 
