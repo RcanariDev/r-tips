@@ -27,6 +27,47 @@ summarizeColumns(Data11)
 <br />
 <br />
 
+## 1.2 Resumir dataframe
+
+- Se realiza utilizando la libreria **summarytools**
+
+```{r}
+library(summarytools)
+Data11 %>% 
+  dfSummary(
+    graph.col = TRUE
+    , style = "grid"
+    # , graph.magnif = 8.75
+  ) %>% 
+  stview()
+```
+<br />
+
+ - Para variables cuantitativas
+
+```{r}
+# Para variables cuantitativas
+Data11 %>% 
+  descr() %>% 
+  stview()
+```
+
+<br />
+<br />
+
+ - Para variables cualitativas
+
+```{r}
+# Para variable cualitativas
+Data11 %>% 
+  freq() %>% 
+  stview()
+```
+
+ 
+<br />
+<br />
+
 ## 2. Llamar a una función de otro script
 
 - Se crea un scripts con las funciones que se necesita **Funcion.R**
