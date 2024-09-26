@@ -68,6 +68,23 @@ Data11 %>%
 <br />
 <br />
 
+## 1.3 Otra forma de resumir
+
+- Se emplea la libreria **tableone**
+
+<br />
+```{r}
+library(tableone)
+
+CreateTableOne(data = iris)
+
+print(CreateTableOne(data = iris), showAllLevels = TRUE, formatOptions = list(big.mark = ","))
+
+```
+
+<br />
+<br />
+
 ## 2. Llamar a una función de otro script
 
 - Se crea un scripts con las funciones que se necesita **Funcion.R**
