@@ -73,7 +73,7 @@ Data11 %>%
 - Se emplea la libreria **tableone**
 
 <br />
-```{r}
+```r
 library(tableone)
 
 CreateTableOne(data = iris)
