@@ -85,6 +85,28 @@ print(CreateTableOne(data = iris), showAllLevels = TRUE, formatOptions = list(bi
 <br />
 <br />
 
+## 1.4 Explorar un dataframe con graficos
+
+- Se utiliza la libreria **dlookr**
+
+<br />
+
+```r
+library(dlookr)
+
+# Graficar las variables de un dataframe
+plot_bar_category(iris)
+plot_box_numeric(iris)
+
+# Para graficar con y si outlier
+plot_outlier(iris)
+
+# Graficar las matrices de correlación
+plot_correlate(iris)
+```
+
+<br />
+
 ## 2. Llamar a una función de otro script
 
 - Se crea un scripts con las funciones que se necesita **Funcion.R**
