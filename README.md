@@ -31,7 +31,7 @@ summarizeColumns(Data11)
 
 - Se realiza utilizando la libreria **summarytools**
 
-```{r}
+```r
 library(summarytools)
 Data11 %>% 
   dfSummary(
@@ -45,7 +45,7 @@ Data11 %>%
 
  - Para variables cuantitativas
 
-```{r}
+```r
 # Para variables cuantitativas
 Data11 %>% 
   descr() %>% 
@@ -57,7 +57,7 @@ Data11 %>%
 
  - Para variables cualitativas
 
-```{r}
+```r
 # Para variable cualitativas
 Data11 %>% 
   freq() %>% 
@@ -79,7 +79,6 @@ library(tableone)
 CreateTableOne(data = iris)
 
 print(CreateTableOne(data = iris), showAllLevels = TRUE, formatOptions = list(big.mark = ","))
-
 ```
 
 <br />
