@@ -73,6 +73,7 @@ Data11 %>%
 - Se emplea la libreria **tableone**
 
 <br />
+
 ```r
 library(tableone)
 
