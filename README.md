@@ -181,6 +181,24 @@ Data11 %>%
   summarise_all(funs(sum(is.na(.))))
 ```
 
+<br />
+
+- Otra forma
+
+<br />
+
+```r
+Data11 %>% 
+  summarise(across(everything(), ~ sum(is.na(.x)))) %>% 
+  pivot_longer(everything() 
+               , names_to = "Variables"
+               , values_to = "TotalNAs") %>% 
+  arrange(desc(TotalNAs)) %>% 
+  ungroup() %>% 
+  mutate(TotalNAsPor = TotalNAs/nrow(Data11)*100) %>% 
+  View()
+```
+
 
 <br />
 <br />
